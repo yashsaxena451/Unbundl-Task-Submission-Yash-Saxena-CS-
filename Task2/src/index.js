@@ -23,7 +23,7 @@ function updateSelectedList() {
   selectedList.innerHTML = '';
   selectedChocolates.forEach(chocolate => {
     const listItem = document.createElement('li');
-    listItem.textContent = `${chocolate.name} - $${chocolate.price}`;
+    listItem.textContent = `${chocolate.name} - ₹${chocolate.price}`;
     selectedList.appendChild(listItem);
   });
 }
